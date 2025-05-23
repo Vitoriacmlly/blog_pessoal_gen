@@ -77,6 +77,8 @@ public class UsuarioService {
 				usuarioLogin.get().setFoto(usuario.get().getFoto());
 				usuarioLogin.get().setToken(gerarToken(usuarioLogin.get().getUsuario()));
 				usuarioLogin.get().setSenha("");
+				
+				return usuarioLogin;
 			}
 		}
 		
